@@ -5,7 +5,6 @@ const Home = () =>
         <p>
             Here you can browse a list of recent misdemeanour committed by our citizens, or you can confess to your own misdemeanour.
         </p>
-
     </div>;
 
 export default Home;

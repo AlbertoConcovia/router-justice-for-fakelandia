@@ -2,8 +2,7 @@ import Nav from './Nav';
 
 const Header = () => 
 
-<div>
-    Header!
+<div className="header">
     <Nav/>    
 </div>;
 
