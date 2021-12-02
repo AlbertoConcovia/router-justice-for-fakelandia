@@ -12,10 +12,10 @@ main {
 }
 
 .header {
-    background-color: yellowgreen;
-    height: 50px;
-    padding: 1%
-  }
+  background-color: rgb(175, 221, 82);
+  height: 50px;
+  padding: 1%;
+}
 
 .footer {
   background-color: black;
@@ -25,15 +25,17 @@ main {
   text-align: center;
 }
 
-.wrapper {
+.navbar-nav {
   display: flex;
   justify-content: space-between;
-  background-color: skyblue;
 }
 
-.nav-links {
-  background-color: red;
+.nav-item {
   flex: 1;
-  list-style-type:none;
+  list-style-type: none;
 }
 
+.active {
+    color: red;
+  }
+  
