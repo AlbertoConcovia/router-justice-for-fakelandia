@@ -1,9 +1,11 @@
+import { NavLink }  from 'react-router-dom';
+
 const Nav = () => (
   <nav>
     <ul>
-      <li>Home</li>
-      <li>Confession</li>
-      <li>Misdemeanour</li>
+      <li><NavLink to='/'>Home</NavLink></li>
+      <li><NavLink to='/Confession'>Confession</NavLink></li>
+      <li><NavLink to='/Misdemeanour'>Misdemeanour</NavLink></li>
     </ul>
   </nav>
 );
