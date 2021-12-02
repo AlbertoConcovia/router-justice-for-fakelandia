@@ -1,7 +1,7 @@
 import { Route, Routes } from "react-router";
-import Home from "./Home";
-import Confession from "./Confession";
-import Misdemeanour from "./Misdemeanour";
+import Home from "./pages/Home";
+import Confession from "./pages/Confession";
+import Misdemeanour from "./pages/Misdemeanour";
 import MainLayouts from "./MainLayouts";
 import { NotFound } from "http-errors";
 

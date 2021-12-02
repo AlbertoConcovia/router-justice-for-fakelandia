@@ -36,6 +36,30 @@ main {
 }
 
 .active {
-    color: red;
-  }
-  
+  color: red;
+}
+
+.misdemeanour-container {
+  border: solid 2px blue;
+  max-width: 90%;
+  margin: 1%;
+}
+
+.row {
+  display: flex;
+  flex-flow: row wrap;
+  text-align: center;
+  border: solid 1px green;
+  justify-content: center;
+}
+
+.box {
+  flex: 1;
+  border: 1px solid #666;
+  border-radius: 5%;
+  flex-direction: column;
+  margin: 10px;
+  height: 40px;
+  min-width: 150px;
+  background-color: #ffafcc;
+}
