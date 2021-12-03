@@ -1,5 +1,5 @@
 
-const TextArea = ({ textAreaValue }) => {
+const TextArea = ({ handleChange}) => {
 
   return (
     <div>
@@ -10,7 +10,7 @@ const TextArea = ({ textAreaValue }) => {
         name="textarea"
         rows="5"
         cols="40"
-        value={textAreaValue}
+        onChange={handleChange}
       />
 
     </div>

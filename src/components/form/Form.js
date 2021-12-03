@@ -5,24 +5,22 @@ import Submit from "../Submit";
 import React, { useState } from "react";
 
 const Form = () => {
-
   const handleSubmit = (event) => {
     event.preventDefault();
   };
 
   const [disabled, setDisabled] = useState(true);
 
-  const handleChange = () =>{
-      console.log(`textArea change`)
+  const handleChange = () => {
     setDisabled(false);
-  }
+  };
 
   return (
     <div className="form-container">
       <form onSubmit={handleSubmit}>
         <TextInput labelText="Subject" labelId="subject" inputValue="input" />
         <Dropdown />
-        <TextArea  textAreaValue="" onChange={handleChange} />
+        <TextArea handleChange={handleChange} />
         <Submit submitButtonValue="Confess" disabled={disabled} />
       </form>
     </div>
