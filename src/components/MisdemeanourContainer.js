@@ -1,15 +1,21 @@
-import MisdemeanourItem from "./MisdemeanourItem";
-import MisdemeanourTitle from "./MisdemeanourTitle";
+import GridContainer from "./GridContainer";
 
 const MisdemeanourContainer = () => (
+    <div>
+      <header className="header">
+        <h2>Misdemeanour</h2>
+      </header>
 
-  <div className="misdemeanour-container">
+      <label for="selectMisdemeanour">Filter:</label>
+      <select name="selectMisdemeanour" id="selectMisdemeanour">
+        <option value="1">1</option>
+        <option value="2">2</option>
+      </select>
 
-    <MisdemeanourTitle/>
+      <GridContainer />
 
-    <MisdemeanourItem/>
-    
-  </div>
-);
+    </div>
+
+  );
 
 export default MisdemeanourContainer;

@@ -33,27 +33,10 @@ function Misdemeanour() {
   }, [misdemeanour]);
 
   return (
-    <FavouritesContext.Provider
-    value={{ misdemeanour, setMisdemeanour }}
-  >
-
-    <div>
-      <header className="header">
-        <h2>Misdemeanour</h2>
-      </header>
-
-      <label for="selectMisdemeanour">Filter:</label>
-      <select name="selectMisdemeanour" id="selectMisdemeanour">
-        <option value="1">1</option>
-        <option value="2">2</option>
-      </select>
-
+    <FavouritesContext.Provider value={{ misdemeanour, setMisdemeanour }}>
       <MisdemeanourContainer />
       <p>{errorMessage}</p>
-    </div>
-
     </FavouritesContext.Provider>
-
   );
 }
 

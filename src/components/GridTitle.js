@@ -1,4 +1,4 @@
-const MisdemeanourTitle = () => (
+const GridTitle = () => (
   <div className="row">
     <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
       <div className="box">Citizen ID</div>
@@ -15,4 +15,4 @@ const MisdemeanourTitle = () => (
   </div>
 );
 
-export default MisdemeanourTitle;
+export default GridTitle;
