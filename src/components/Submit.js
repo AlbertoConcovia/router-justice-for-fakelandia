@@ -1,8 +1,8 @@
-const Submit = ({ SubmitButtonValue }) => {
+const Submit = ({ submitButtonValue, disabled }) => {
 
   return (
     <div >
-      <input type='submit' value={SubmitButtonValue} />
+      <input type='submit' value={submitButtonValue} disabled={disabled} />
     </div>
   );
 }
