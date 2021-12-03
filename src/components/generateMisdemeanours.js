@@ -15,7 +15,7 @@ const sleep = async (milliseconds) => {
 
 export default async function generateMisdemeanours(number){
     
-    await sleep(1500);
+    await sleep(500);
 
     let amount = number ?? 50;
 

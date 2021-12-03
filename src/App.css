@@ -48,6 +48,9 @@ main {
 
 .form-container {
   background-color: rgb(247, 243, 243);
+  border: solid 1px blue;
+  padding: 1%;
+  margin: 1%;
 }
 
 .misdemeanour-container {
@@ -89,7 +92,7 @@ main {
   border: 1px solid #666;
 }
 
-.select-option {
+.dropdown {
   max-width: 90%;
   margin: auto;
   text-align: center;

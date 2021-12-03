@@ -1,5 +1,5 @@
-const SelectOption = () => (
-  <div className="select-option">
+const Dropdown = () => (
+  <div className="dropdown">
     <label htmlFor="selectMisdemeanour">Filter:</label>
     <select name="selectMisdemeanour" id="selectMisdemeanour">
       <option value="1">1</option>
@@ -8,4 +8,4 @@ const SelectOption = () => (
   </div>
 );
 
-export default SelectOption;
+export default Dropdown;
