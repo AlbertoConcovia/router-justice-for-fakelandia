@@ -1,4 +1,5 @@
 import Dropdown from "../Dropdown";
+import TextArea from "../TextArea";
 import TextInput from "../TextInput";
 
 const Form = () => {
@@ -10,18 +11,13 @@ const Form = () => {
   return (
     <div className="form-container">
       <form onSubmit={handleSubmit}>
-        <TextInput
-          labelText="Subject"
-          labelId="subject"
-          inputValue="input"
-        />
+        <TextInput labelText="Subject" labelId="subject" inputValue="input" />
 
         <Dropdown />
-{/* 
-        <ReasonForSparing
-          reasonForSparing={reasonForSparing}
-          onChangeReasonForSparing={(e) => setReasonForSparing(e.target.value)}
-        /> */}
+        
+        <TextArea
+          textAreaValue=""
+        />
 
         {/* <SubmitForm /> */}
       </form>
