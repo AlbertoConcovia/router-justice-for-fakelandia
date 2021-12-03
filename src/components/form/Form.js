@@ -1,10 +1,10 @@
 import Dropdown from "../Dropdown";
 import TextArea from "../TextArea";
 import TextInput from "../TextInput";
+import SubmitForm from "../SubmitForm";
 
 const Form = () => {
   const handleSubmit = (event) => {
-    // onSubmitForm( numberofbeings, whatIs2plus2, reasonForSparing );
     event.preventDefault();
   };
 
@@ -12,14 +12,9 @@ const Form = () => {
     <div className="form-container">
       <form onSubmit={handleSubmit}>
         <TextInput labelText="Subject" labelId="subject" inputValue="input" />
-
         <Dropdown />
-        
-        <TextArea
-          textAreaValue=""
-        />
-
-        {/* <SubmitForm /> */}
+        <TextArea  textAreaValue="" />
+        <SubmitForm />
       </form>
     </div>
   );
