@@ -1,7 +1,7 @@
 import Dropdown from "../Dropdown";
 import TextArea from "../TextArea";
 import TextInput from "../TextInput";
-import SubmitForm from "../SubmitForm";
+import Submit from "../Submit";
 
 const Form = () => {
   const handleSubmit = (event) => {
@@ -14,7 +14,7 @@ const Form = () => {
         <TextInput labelText="Subject" labelId="subject" inputValue="input" />
         <Dropdown />
         <TextArea  textAreaValue="" />
-        <SubmitForm />
+        <Submit SubmitButtonValue="Confess"/>
       </form>
     </div>
   );
