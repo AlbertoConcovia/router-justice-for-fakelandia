@@ -1,16 +1,23 @@
 import GridData from "./GridData";
 import GridTitle from "./GridTitle";
 import React, { useContext } from "react";
-import { FavouritesContext } from "./pages/Misdemeanour";
+import { MisdemeanoursContext } from "./pages/Misdemeanour";
 
 function GridContainer() {
-  const { misdemeanour, setMisdemeanour } = useContext(FavouritesContext);
+  const { misdemeanours } = useContext(MisdemeanoursContext);
+
+  const buildRows = () => {
+    let rows = [];
+    misdemeanours.forEach((misdemeanour) => {
+      rows.push(<GridData misdemeanour={misdemeanour} />);
+    });
+    return rows;
+  };
 
   return (
-    <div className="misdemeanour-container">
+    <div className="grid-container">
       <GridTitle />
-
-      <GridData misdemeanour={misdemeanour[0]} />
+      {buildRows()}
     </div>
   );
 }

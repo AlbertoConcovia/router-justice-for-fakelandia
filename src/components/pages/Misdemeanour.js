@@ -2,16 +2,16 @@ import MisdemeanourContainer from "../MisdemeanourContainer";
 import generateMisdemeanours from "../generateMisdemeanours";
 import React, { useState, useEffect } from "react";
 
-export const FavouritesContext = React.createContext();
+export const MisdemeanoursContext = React.createContext();
 
 function Misdemeanour() {
-  const [misdemeanour, setMisdemeanour] = useState([]);
+  const [misdemeanours, setMisdemeanours] = useState([]);
   const [errorMessage, setErroMessage] = useState(null);
 
   const newMisdemeanours = async () => {
     try {
-      const apiResponse = await generateMisdemeanours(1);
-      setMisdemeanour(apiResponse);
+      const apiResponse = await generateMisdemeanours(5);
+      setMisdemeanours(apiResponse);
       setErroMessage(null);
     } catch (error) {
       switch (error.response.status) {
@@ -30,13 +30,13 @@ function Misdemeanour() {
 
   useEffect(() => {
     newMisdemeanours();
-  }, [misdemeanour]);
+  }, [misdemeanours]);
 
   return (
-    <FavouritesContext.Provider value={{ misdemeanour, setMisdemeanour }}>
+    <MisdemeanoursContext.Provider value={{ misdemeanours }}>
       <MisdemeanourContainer />
       <p>{errorMessage}</p>
-    </FavouritesContext.Provider>
+    </MisdemeanoursContext.Provider>
   );
 }
 

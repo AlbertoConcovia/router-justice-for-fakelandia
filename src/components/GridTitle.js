@@ -1,16 +1,16 @@
 const GridTitle = () => (
-  <div className="row">
-    <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-      <div className="box">Citizen ID</div>
+  <div className="grid-title">
+    <div className="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+      <div className="box box-title">Citizen ID</div>
     </div>
-    <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-      <div className="box">Date</div>
+    <div className="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+      <div className="box box-title">Date</div>
     </div>
-    <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-      <div className="box">Misdemeanour</div>
+    <div className="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+      <div className="box box-title">Misdemeanour</div>
     </div>
-    <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-      <div className="box">Punishment Idea</div>
+    <div className="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+      <div className="box box-title">Punishment Idea</div>
     </div>
   </div>
 );
